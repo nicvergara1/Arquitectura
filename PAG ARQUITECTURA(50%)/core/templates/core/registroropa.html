@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+{% load static %}
+<style>
+    a{
+        text-decoration: none;
+    }
+</style>
+{% block content %}
+<link rel="stylesheet" href="{% static 'forms.css'%}">
+
+
+      {% csrf_token %}
+                {{ form.as_p}}
+                <div>
+                <button type="submit" class="btn btn-primary">Registrar Ropa</button>
+              </div>
+  
+{% endblock %}

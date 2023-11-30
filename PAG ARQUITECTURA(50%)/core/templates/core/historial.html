@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{%static 'estilo.css'%}">
+<h1 class="historial">Historial Ropa</h1>
+<section id="catalogo">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>FECHA</th>
+                <th>TIPO</th>
+                <th>ESTADO</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for fila in compras %}
+            <tr>
+                <td>{{fila.id}}</td>
+                <td>{{fila.fecha}}</td>
+                <td>{{fila.total}}</td>
+                <td>{{fila.estado}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {% if not compras %}
+        <h1>Aún no tienes ropa registrada!.</h1>
+    {% endif %}
+</section>
+{% endblock %}

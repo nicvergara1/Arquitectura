@@ -1,0 +1,279 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<style>
+  a{
+      text-decoration: none;
+  }
+</style>
+    
+    
+          
+        
+        
+        <div class="home-hero">
+          <div class="home-hero1">
+            <div class="home-container1">
+              <h1 class="home-hero-heading heading1">
+                Lavanderia Hospital San Jose Melipilla
+              </h1>
+              
+              {% if user.is_authenticated %}
+              <span class="home-hero-sub-heading">
+                <span class="home-text" style="text-transform: capitalize;"> Bienvenido {{user.username}}</span>
+                <br />
+              </span>
+              <div class="home-btn-group">
+                <a class="home-hero-button1 button" href="{% url 'registroropa'%}">Registrar ropa</a>
+                {% else %}
+                <div class="home-btn-group">
+                  <a class="home-hero-button1 button" href="{% url 'registro' %}">Registrarse</a>
+                  <button class="home-hero-button2 button">
+                    ¿Tienes dudas?→
+                  </button>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-details">
+          <div class="home-details1">
+            <div class="home-container2">
+              <span class="home-text02 sectionTitle">
+                <span>colaboración</span>
+                <br />
+              </span>
+              <h2 class="home-details-heading heading2">
+                Nuestro compromiso con el Hospital San José de Melipilla
+              </h2>
+              <span class="home-details-sub-heading">
+                Nosotros como lavanderia nos comprometemos con el Hospital San José de Melipilla, 
+                para poder ahorrar tiempo y dinero tanto a los funcionarios como al hospital, 
+                dando nuestro servicios de lavado y secado de ropa.
+              </span>
+            </div>
+            <a
+              href="https://hospitaldemelipilla.cl/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link"
+            >
+              <img
+                alt="image"
+                src="https://colaborachile.cl/wp-content/uploads/2023/01/logo-06.jpg"
+                class="home-details-image"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="home-gallery">
+          <div class="home-gallery1">
+            <h1 class="home-gallery-heading heading2">
+              Fotos de la lavanderia
+            </h1>
+            <span class="home-gallery-sub-heading">
+              Algunas de las fotos de nuestra lavanderia
+            </span>
+            <div class="home-container3">
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name"
+              >
+                <img
+                  alt="image"
+                  src="https://hospitaldecoronel.cl/inicio/wp-content/uploads/2020/03/20200225_152550.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name1"
+              >
+                <img
+                  alt="image"
+                  src="https://www.reyardid.org/wp-content/uploads/2023/02/lavanderia-hospitalaria-2.png"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name3"
+              >
+                <img
+                  alt="image"
+                  src="https://www.lacuestadecayma.com.pe/wp-content/uploads/2018/07/Lavanderia-1.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name2"
+              >
+                <img
+                  alt="image"
+                  src="https://www.revistalimpiezas.es/wp-content/uploads/sites/4/2020/12/desinfeccion-en-lavandernia-gi.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name4"
+              >
+                <img
+                  alt="image"
+                  src="https://hospitaldecoronel.cl/inicio/wp-content/uploads/2020/03/20200225_151540-2-1024x503.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name5"
+              >
+                <img
+                  alt="image"
+                  src="https://hospitaldecoronel.cl/inicio/wp-content/uploads/2020/03/20200225_152003.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name6"
+              >
+                <img
+                  alt="image"
+                  src="https://hospitaldecoronel.cl/inicio/wp-content/uploads/2020/03/20200225_151909-2.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name7"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1635274605638-d44babc08a4f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTA1NzUzMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name8"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1604254607827-01db84510729?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTA1NzUzMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name9"
+              >
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1489274495757-95c7c837b101?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcwMTA1NzUzMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name10"
+              >
+                <img
+                  alt="image"
+                  src="https://hospitaldecoronel.cl/inicio/wp-content/uploads/2020/03/20200225_152047.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name11"
+              >
+                <img
+                  alt="image"
+                  src="https://prensa.css.gob.pa/wp-content/uploads/2021/01/GIOVANNA-8.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-faq">
+          <div class="home-faq-container">
+            <div class="home-faq1">
+              <div class="home-container4">
+                <span class="home-text05 sectionTitle">
+                  <span>FAQ</span>
+                  <br />
+                </span>
+                <h2 class="home-text08 heading2">Preguntas Frecuentes</h2>
+                <span class="home-text09">
+                  <span>
+                    Aqui estan las preguntas que más realizan los
+                    clientes.&nbsp;
+                  </span>
+                  <br />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div class="home-container5">
+                <div class="pregunta1-container">
+                  <span class="pregunta1-text heading4">
+                    <span>¿Como puedo registrarme en la pagina?</span>
+                  </span>
+                  <span class="pregunta1-text1">
+                    <span>
+                      dandole click en la wea que dice registrar po matewea
+                    </span>
+                  </span>
+                </div>
+                <div class="pregunta1-container">
+                  <span class="pregunta1-text heading4">
+                    <span>
+                      ¿Puedo usar mis redes sociales para registrarme en la
+                      pagina?
+                    </span>
+                  </span>
+                  <span class="pregunta1-text1">
+                    <span>
+                      No, por ahora no se pueden utilizar las redes sociales
+                      como metodo para registrarte en la pagina.
+                    </span>
+                  </span>
+                </div>
+                <div class="pregunta1-container">
+                  <span class="pregunta1-text heading4">
+                    <span>¿Que servicios entrega su lavanderia?</span>
+                  </span>
+                  <span class="pregunta1-text1">
+                    <span>
+                      Nuestra lavanderia entrega servicios de
+                      lavado,secado,planchado de ropa medica de todos los
+                      hospitales alrededor de la zona.
+                    </span>
+                  </span>
+                </div>
+                <div class="pregunta1-container">
+                  <span class="pregunta1-text heading4">
+                    <span>¿Como puedo registrar mi ropa en la lavandería?</span>
+                  </span>
+                  <span class="pregunta1-text1">
+                    <span>
+                      Puedes registrar tu ropa solo si eres, medico , enfermo o
+                      personal de aseo, accediendo al apartado registrar ropa y
+                      rellenando el formulario
+                    </span>
+                  </span>
+                </div>
+                <div class="pregunta1-container">
+                  <span class="pregunta1-text heading4">
+                    <span>¿Cómo se en que estado esta mi ropa?</span>
+                  </span>
+                  <span class="pregunta1-text1">
+                    <span>
+                      Para saber el estado de tu ropa solo debes ir al apartado
+                      de "Historial" e indicara en que estado esta tu ropa.
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    {% endblock %}

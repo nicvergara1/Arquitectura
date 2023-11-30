@@ -1,0 +1,4 @@
+1- Instalar crispy-bootstrap4 con el siguiente comando en consola : pip install crispy-bootstrap4
+2- Iniciar el proyecto desde la consola con el siguiente comando: python manage.py runserver
+3- Para ingresar al admin se debe poner /admin al final del link principal(168.192...)
+4- Las credenciales para iniciar son admin:123456
